@@ -1,6 +1,7 @@
 #include <stdio.h>
 int main()
 {   float n;
-    scanf("%lf",&n);
+    scanf("%lf", &n);
     printf("%lf");
+    return 0;
 }
