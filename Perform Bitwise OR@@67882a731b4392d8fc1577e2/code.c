@@ -1,10 +1,9 @@
 #include <stdio.h>
 
 int main() {
-    int a, b, n;
-   
-    scanf("%d%d", &a, &b);
-    n = a ^ b; // Bitwise XOR operator
-    printf("%d\n", n);
+    int num1, num2, result;
+    scanf("%d%d", &num1, &num2);
+    result = num1 | num2; 
+    printf("The result of bitwise OR operation is: %d\n", result);
     return 0;
 }
