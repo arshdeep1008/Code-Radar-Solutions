@@ -3,10 +3,10 @@
 int main() {
     char str1[100], str2[100];
 
-    
+    printf("Enter the first string: ");
     fgets(str1, sizeof(str1), stdin); // Read the first string
 
- 
+    printf("Enter the second string: ");
     fgets(str2, sizeof(str2), stdin); // Read the second string
 
     printf("You entered:\n");
