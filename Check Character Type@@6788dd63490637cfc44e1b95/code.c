@@ -10,14 +10,14 @@ int main() {
  
         if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
             ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
-            printf("The character '%c' is a vowel.\n", ch);
+            printf("Vowel\n", ch);
         } else {
-            printf("The character '%c' is a consonant.\n", ch);
+            printf(" Consonant\n", ch);
         }
     } else if (isdigit(ch)) {
-        printf("The character '%c' is a digit.\n", ch);
+        printf(" Digit\n", ch);
     } else {
-        printf("The character '%c' is a special character.\n", ch);
+        printf(" Special Character\n", ch);
     }
 
     return 0;
