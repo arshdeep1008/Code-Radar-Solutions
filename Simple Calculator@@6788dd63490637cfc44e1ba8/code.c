@@ -3,10 +3,10 @@
 int main() {
     char operator;
     double num1, num2, result;
-
+    scanf("%lf %lf", &num1, &num2);
     scanf("%c", &operator);
 
-    scanf("%lf %lf", &num1, &num2);
+    
 
     switch (operator) {
         case '+':
