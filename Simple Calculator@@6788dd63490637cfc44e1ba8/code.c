@@ -1,26 +1,37 @@
 #include <stdio.h>
-int main(){
-    int a,b,sum,sub,prod,div;
-    char c;
-    scanf("%d%d",&a,&b);
-    scanf("%c",&c);
-    sum = a+b;
-    sub = a-b;
-    prod = a*b;
-    div = a/b;
-    if (c == '+'){
-        printf("%d",sum);
+
+int main() {
+    char operator;
+    double num1, num2, result;
+
+    scanf("%c", &operator);
+
+    scanf("%lf %lf", &num1, &num2);
+
+    switch (operator) {
+        case '+':
+            result = num1 + num2;
+            break;
+        case '-':
+            result = num1 - num2;
+            break;
+        case '*':
+            result = num1 * num2;
+            break;
+        case '/':
+            if (num2 != 0) {
+                result = num1 / num2;
+            } else {
+                printf("Error! Division by zero.\n");
+                return 1;
+            }
+            break;
+        default:
+            printf("Invalid operator.\n");
+            return 1;
     }
-    else if(c == '-'){
-        printf("%d",sub);
-    }
-    else if(c == '*'){
-        printf("%d",prod);
-    }
-    else if(c == '/'){
-        printf("%d",div);
-    }
-    else{
-        printf("error");
-    }
+
+    printf(" %.2lf\n", result);
+
+    return 0;
 }
