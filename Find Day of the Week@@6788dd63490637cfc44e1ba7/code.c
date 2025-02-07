@@ -2,7 +2,7 @@
 int day;
 	scanf("%d", &day);
 	if (day==1)
-	printf("monday");
+	    printf("monday");
 	else if(day==2)
 		printf("tuesday");
 	else if(day==3)
