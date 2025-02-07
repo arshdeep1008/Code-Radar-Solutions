@@ -1,22 +1,17 @@
-#include <stdio.h>
-int main{
-int day;
-	scanf("%d", &day);
-	if (day==1)
-	    printf("monday");
-	else if(day==2)
-		printf("tuesday");
-	else if(day==3)
-		printf("wednesday");
-	else if(day==4)
-		printf("thursday");
-	else if(day==5)
-		printf("friday");
-	else if(day==6)
-		printf("saturday");
-	else if (day==7)
-		printf("sunday");
-	else
-		printf("Invalid"); 
+# include<stdio.h>
+int main(){
+    int a;
+    scanf("%d",&a);
+    switch(a){
+        case 1:printf("Monday");break;
+        case 2:printf("Tuesday");break;
+        case 3:printf("Wednesday");break;
+        case 4:printf("Thursday");break;
+        case 5:printf("Friday");break;
+        case 6:printf("Saturday");break;
+        case 7:printf("Sunday");break;
+        case 8:printf("Invalid");break;
+       
+    }
 }
 
