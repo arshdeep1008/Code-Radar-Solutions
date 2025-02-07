@@ -1,4 +1,5 @@
 #include <stdio.h>
+int main{
 int day;
 	scanf("%d", &day);
 	if (day==1)
@@ -17,5 +18,5 @@ int day;
 		printf("sunday");
 	else
 		printf("Invalid"); 
-
+}
 
