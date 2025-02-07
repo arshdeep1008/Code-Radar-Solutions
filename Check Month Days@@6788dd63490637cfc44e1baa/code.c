@@ -4,7 +4,7 @@
     printf("Enter the month number: ");
     scanf("%d", &n);
 
-    switch(n) {
+        switch(n) {
         case 1:
             printf("January has 31 days\n");
             break;
