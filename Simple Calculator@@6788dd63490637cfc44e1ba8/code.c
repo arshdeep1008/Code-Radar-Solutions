@@ -17,7 +17,10 @@ int main(){
     else if(c == '*'){
         printf("%d",prod);
     }
-    else{
+    else if(c == '/'){
         printf("%d",div);
+    }
+    else{
+        printf("error");
     }
 }
