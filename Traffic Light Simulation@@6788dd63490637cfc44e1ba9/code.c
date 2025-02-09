@@ -2,10 +2,10 @@
 int main() {
     char c;
     scanf("%c",&c);
-    if (c == 'R'){
+    if (c == 'G'){
         printf("Go");
     }
-    else if( c == 'G'){
+    else if( c == 'R'){
         printf("Stop");
     }
     else if ( c == 'Y'){
