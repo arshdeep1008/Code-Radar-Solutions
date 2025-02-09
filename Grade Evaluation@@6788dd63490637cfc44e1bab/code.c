@@ -17,7 +17,7 @@ int main() {
     else if(c == 'F'){
         printf("Fail");
     }
-    else(){
+    else{
         printf("Invailid grade");
     }
     return 0;
