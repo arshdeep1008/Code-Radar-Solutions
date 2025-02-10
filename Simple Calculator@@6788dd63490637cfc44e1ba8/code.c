@@ -3,15 +3,8 @@
 int main() {
     char operator;
     double num1, num2, result;
-
-    // Input operator
-    printf("Enter an operator (+, -, *, /): ");
-    scanf(" %c", &operator);
-
-    // Input two numbers
-    printf("Enter two numbers: ");
     scanf("%lf %lf", &num1, &num2);
-
+    scanf(" %c", &operator);
     switch (operator) {
         case '+':
             result = num1 + num2;
