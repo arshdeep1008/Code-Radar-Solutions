@@ -28,7 +28,7 @@ int main() {
             return 1;
     }
 
-    printf(" %f\n", result);
+    printf(" %.f\n", result);
 
     return 0;
 }
