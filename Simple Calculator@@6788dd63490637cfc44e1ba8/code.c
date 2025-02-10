@@ -1,14 +1,18 @@
 #include <stdio.h>
 
 int main() {
-    char o;
+    char operator;
     double num1, num2, result;
+
+    // Input operator
+    printf("Enter an operator (+, -, *, /): ");
+    scanf(" %c", &operator);
+
+    // Input two numbers
+    printf("Enter two numbers: ");
     scanf("%lf %lf", &num1, &num2);
-    scanf("%c", &o);
 
-    
-
-    switch (o) {
+    switch (operator) {
         case '+':
             result = num1 + num2;
             break;
@@ -31,7 +35,7 @@ int main() {
             return 1;
     }
 
-    printf(" %.2lf\n", result);
+    printf("The result is: %.2lf\n", result);
 
     return 0;
 }
