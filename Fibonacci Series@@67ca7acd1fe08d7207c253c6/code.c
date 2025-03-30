@@ -4,6 +4,7 @@ int fab(int n); // Function declaration
 
 int main() {
     int n;
+    printf("Enter a positive integer: ");
     scanf("%d", &n); // Use & to pass the address of 'n'
 
     if (n <= 0) {
@@ -11,7 +12,8 @@ int main() {
         return 0;
     }
 
-    fab(n);
+    // Print the result of the Fibonacci calculation
+    printf("Fibonacci number at position %d is: %d\n", n, fab(n));
     return 0;
 }
 
