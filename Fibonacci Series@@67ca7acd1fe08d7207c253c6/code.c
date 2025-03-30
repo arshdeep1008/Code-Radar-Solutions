@@ -1,24 +1,24 @@
-#include<stdio.h>
+#include <stdio.h>
 
-fab(n);
-int main(){
+int fab(int n); // Function declaration
+
+int main() {
     int n;
-    scanf("%d",n);
-    if (n<=0){
+    scanf("%d", &n); // Use & to pass the address of 'n'
+
+    if (n <= 0) {
         printf("Invalid input\n");
         return 0;
     }
+
     fab(n);
+    return 0;
 }
 
-fab(n){
-    if(fab(n)==1){
+int fab(int n) { // Function definition
+    if (n == 1 || n == 2) { // Base case: First two Fibonacci numbers are 1
         return 1;
     }
-    if (fab(n)==0){
-        return 0;
-    }
-    f1 = fab(n-1);
-    f2 = fab(n-2);
-    fab(n) = f1 + f2;
+    return fab(n - 1) + fab(n - 2); // Recursive case
 }
+ab(n) = f1 + f2;
