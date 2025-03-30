@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-fab(int n);
+fab(n);
 int main(){
     int n;
     scanf("%d",n);
@@ -11,7 +11,7 @@ int main(){
     fab(n);
 }
 
-fab(int n){
+fab(n){
     if(fab(n)==1){
         return 1;
     }
