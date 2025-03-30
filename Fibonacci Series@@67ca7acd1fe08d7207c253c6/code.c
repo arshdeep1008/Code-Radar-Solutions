@@ -20,6 +20,4 @@ int fab(int n) { // Function definition
         return 1;
     }
     return fab(n - 1) + fab(n - 2); // Recursive case
-
-ab(n) = f1 + f2;
 }
